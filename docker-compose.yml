@@ -1,11 +1,10 @@
-version: "3.3"
 services:
   ERPLibre:
     image: technolibre/erplibre:1.5.0_odoo_16.0_91a7d1b
     ports:
-      - 8069:8069
-      - 8071:8071
-      - 8072:8072
+      - 8070:8069
+      - 8073:8071
+      - 8074:8072
     environment:
       HOST: db
       PASSWORD: mysecretpassword
