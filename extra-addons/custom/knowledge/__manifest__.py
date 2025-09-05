@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# Part of ERPLibre Community. See LICENSE file for full copyright and licensing details.
+
 {
     'name': 'Knowledge - Community Substitute',
     'version': '18.0.1.0.0',
