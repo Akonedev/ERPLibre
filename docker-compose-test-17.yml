@@ -1,0 +1,33 @@
+services:
+  odoo17:
+    image: odoo:17
+    ports:
+      - 8075:8069
+      - 8076:8072
+    environment:
+      HOST: db17
+      PASSWORD: testmigrationpassword
+      USER: odoo
+      POSTGRES_DB: postgres
+    depends_on:
+      - db17
+    volumes:
+      - odoo17_data_dir:/var/lib/odoo
+      - ./addons:/mnt/extra-addons:ro
+    restart: unless-stopped
+    command: odoo
+
+  db17:
+    image: postgres:15
+    environment:
+      POSTGRES_PASSWORD: testmigrationpassword
+      POSTGRES_USER: odoo
+      POSTGRES_DB: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgres17_data:/var/lib/postgresql/data/pgdata
+    restart: unless-stopped
+
+volumes:
+  odoo17_data_dir:
+  postgres17_data:
