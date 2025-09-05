@@ -1,0 +1,1 @@
+# Community substitute for Enterprise account_followup module

@@ -1,0 +1,1 @@
+# Community substitute for Enterprise POS features

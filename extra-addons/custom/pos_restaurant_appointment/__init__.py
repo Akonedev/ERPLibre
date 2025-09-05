@@ -1,0 +1,1 @@
+# Community substitute for POS restaurant appointment features
