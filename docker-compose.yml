@@ -25,7 +25,7 @@ services:
     volumes:
       # See the volume section at the end of the file
       - erplibre_data_dir_v18:/var/lib/odoo
-      - ./addons:/mnt/extra-addons:ro
+      - ./extra-addons:/mnt/extra-addons:ro
       - erplibre_conf_v18:/etc/odoo
     restart: always
 

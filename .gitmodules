@@ -1,0 +1,4 @@
+[submodule "extra-addons/OCA/extra-addons/OCA/server-tools"]
+	path = extra-addons/OCA/extra-addons/OCA/server-tools
+	url = https://github.com/OCA/server-tools.git
+	branch = 18.0
